@@ -7,26 +7,27 @@
     <link rel="stylesheet" href="index.css">
     <title>Color Scheme Generator</title>
 </head>
-<body style="background: antiquewhite;">
+<body>
     <div class="container">
-        <section class="color-picker">
-            <input type="color" class="seed-color" name="seed-color" id="seed-color">
-            <select class="color-list" name="choose-color" id="choose-color">
-                <option value="0">Choose color</option>
-                <option value="1">Monochrome</option>
-                <option value="2">Monochrome-dark</option>
-                <option value="3">Monochrome-light</option>
-                <option value="4">Analogic</option>
-                <option value="5">Complement</option>
-                <option value="6">Analogic-complement</option>
+        <section id="color-picker" >
+
+            <input type="color" value="#ff0000" name="seed-color" id="seed-color">
+            <select class="color-list" name="color-mode" id="color-mode">
+                <option value="choose color">Choose color</option>
+                <option id="monochrome" value="monochrome">Monochrome</option>
+                <option id="monochrome-dark" value="monochrome-dark">Monochrome-dark</option>
+                <option id="monochrome-light" value="monochrome-light">Monochrome-light</option>
+                <option id="analogic" value="analogic">Analogic</option>
+                <option id="complement" value="complement">Complement</option>
+                <option id="analogic-complement" value="analogic-complement">Analogic-complement</option>
             </select>
+            <input type="submit" id="color-btn" value="Get color scheme">
 
-            <input type="button" id="btn" value="Get color scheme">
         </section>
-        <section id="color-pallette">
 
+        <section id="color-pallette">
         </section>
     </div>
-
+<script src="/index.js"></script>
 </body>
 </html>
